@@ -1,0 +1,1571 @@
+/* =========================
+GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    color:#111;
+    background:#fff;
+
+}
+
+
+img{
+
+    width:100%;
+    display:block;
+
+}
+
+
+h1,h2,h3,h4{
+
+    font-weight:700;
+
+}
+
+
+p{
+
+    color:#555;
+    line-height:1.7;
+
+}
+
+
+
+/* =========================
+HEADER
+========================= */
+
+
+header{
+
+    width:100%;
+
+    padding:20px 8%;
+
+    background:#071A4B;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+}
+
+
+
+.logo{
+
+    color:white;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    letter-spacing:5px;
+
+}
+
+
+
+nav{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:30px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+
+
+nav a:hover{
+
+    color:#00B4D8;
+
+}
+
+
+
+.menu-btn{
+
+    display:none;
+
+    color:white;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+}
+
+
+
+/* =========================
+BUTTON
+========================= */
+
+
+button{
+
+    background:#00B4D8;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+
+
+button:hover{
+
+    background:#071A4B;
+
+}
+
+
+
+/* =========================
+HERO
+========================= */
+
+
+.hero{
+
+
+    min-height:90vh;
+
+
+    padding:80px 8%;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+
+    background:
+
+    linear-gradient(
+    rgba(7,26,75,.75),
+    rgba(7,26,75,.75)
+    ),
+
+
+    url("image/kedai.jpeg");
+
+
+    background-size:cover;
+
+
+    background-position:center;
+
+
+}
+
+
+
+
+
+.hero-text{
+
+    width:60%;
+
+    color:white;
+
+}
+
+
+
+
+
+.hero-text h4{
+
+    color:#00B4D8;
+
+    letter-spacing:3px;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+.hero-text h1{
+
+
+    color:white;
+
+
+    font-size:60px;
+
+
+    line-height:1.15;
+
+
+    margin:25px 0;
+
+
+}
+
+
+
+
+
+.hero-text p{
+
+
+    color:white;
+
+
+    font-size:18px;
+
+
+    max-width:600px;
+
+
+}
+
+
+
+
+
+/* =========================
+SECTION
+========================= */
+
+
+.choose,
+.services-page,
+.process,
+.location,
+.contact,
+.contact-page,
+.gallery,
+.price-list{
+
+
+    padding:90px 8%;
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.choose h2,
+.services-page h2,
+.process h2,
+.location h2,
+.contact h2,
+.contact-page h2,
+.gallery h2,
+.price-list h2{
+
+
+    font-size:40px;
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+
+
+/* =========================
+CARD
+========================= */
+
+
+.cards,
+.service-container{
+
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+}
+
+
+
+
+.cards div,
+.service-box{
+
+
+    background:white;
+
+
+    padding:35px 25px;
+
+
+    border-radius:25px;
+
+
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.1);
+
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.cards div:hover,
+.service-box:hover{
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+
+
+
+.cards h3{
+
+    font-size:45px;
+
+}
+
+
+
+
+
+/* =========================
+SERVICE
+========================= */
+
+
+.service-box{
+
+
+    width:280px;
+
+
+}
+
+
+
+.service-box .icon{
+
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+
+}
+
+
+.service-box h3{
+
+
+    color:#071A4B;
+
+    margin-bottom:15px;
+
+
+}
+
+/* =========================
+PAGE HERO
+========================= */
+
+
+.page-hero{
+
+
+    background:#071A4B;
+
+
+    color:white;
+
+
+    padding:80px 20px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.page-hero h1{
+
+
+    font-size:50px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.page-hero p{
+
+
+    color:#ddd;
+
+
+}
+
+
+
+
+
+/* =========================
+PRICE
+========================= */
+
+
+.price-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+    gap:30px;
+
+
+    max-width:900px;
+
+
+    margin:auto;
+
+
+}
+
+
+
+
+.price-item{
+
+
+    background:#071A4B;
+
+
+    color:white;
+
+
+    padding:40px;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+
+.price-item h3{
+
+
+    font-size:22px;
+
+
+}
+
+
+
+.price-item h2{
+
+
+    font-size:42px;
+
+
+    color:#00B4D8;
+
+
+    margin:15px 0;
+
+
+}
+
+
+
+.price-item p{
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+.price-note{
+
+
+    max-width:700px;
+
+
+    margin:50px auto;
+
+
+    padding:30px;
+
+
+    background:#f5f6fb;
+
+
+    border-radius:25px;
+
+
+}
+
+
+
+
+
+/* =========================
+PROCESS
+========================= */
+
+
+.process-container{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:30px;
+
+
+}
+
+
+
+
+.process-container div{
+
+
+    width:220px;
+
+
+    background:white;
+
+
+    padding:30px;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.1);
+
+
+}
+
+
+
+.process-container h3{
+
+
+    font-size:35px;
+
+
+    color:#00B4D8;
+
+
+}
+
+
+
+
+
+/* =========================
+LOCATION
+========================= */
+
+
+.location-container{
+
+
+    display:flex;
+
+
+    gap:40px;
+
+
+    align-items:center;
+
+
+}
+
+
+
+.location-info{
+
+
+    width:40%;
+
+
+    text-align:left;
+
+
+}
+
+
+
+
+
+.location-info h3{
+
+
+    color:#071A4B;
+
+
+    margin-top:25px;
+
+
+}
+
+
+
+
+
+.map{
+
+
+    width:60%;
+
+
+}
+
+
+
+.map iframe{
+
+
+    width:100%;
+
+
+    border-radius:25px;
+
+
+}
+
+
+
+
+
+.map-button{
+
+
+    display:inline-block;
+
+
+    margin-top:20px;
+
+
+    background:#00B4D8;
+
+
+    color:white;
+
+
+    padding:15px 30px;
+
+
+    border-radius:50px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+
+
+/* =========================
+GALLERY
+========================= */
+
+
+.gallery-img{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:30px;
+
+
+}
+
+
+
+.gallery-img img{
+
+
+    width:40%;
+
+
+    border-radius:25px;
+
+
+}
+
+
+
+
+
+/* =========================
+GOOGLE TESTIMONIAL
+========================= */
+
+
+.testimonial{
+
+
+    padding:100px 0;
+
+
+    background:#f5f6fb;
+
+
+    text-align:center;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+.testimonial h2{
+
+
+    font-size:40px;
+
+
+    color:#071A4B;
+
+
+    margin-bottom:60px;
+
+
+}
+
+
+
+
+.testimonial-slider{
+
+
+    overflow:hidden;
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+.testimonial-track{
+
+
+    display:flex;
+
+
+    gap:30px;
+
+
+    width:max-content;
+
+
+    animation:moveReview 35s linear infinite;
+
+
+}
+
+
+
+
+
+.review-card{
+
+
+    width:320px;
+
+
+    min-height:250px;
+
+
+    background:white;
+
+
+    padding:35px;
+
+
+    border-radius:25px;
+
+
+    flex-shrink:0;
+
+
+    text-align:left;
+
+
+    box-shadow:
+
+
+    0 15px 40px rgba(0,0,0,.12);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.review-card:hover{
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+
+
+.stars{
+
+
+    color:#FFC107;
+
+
+    font-size:25px;
+
+
+    letter-spacing:4px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.review-card h4{
+
+
+    color:#071A4B;
+
+
+    font-size:18px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+.review-card p{
+
+
+    font-size:15px;
+
+
+}
+
+
+
+
+.review-card span{
+
+
+    color:#999;
+
+
+    font-size:13px;
+
+
+}
+
+
+
+
+
+@keyframes moveReview{
+
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+
+}
+
+
+
+
+
+
+/* =========================
+CONTACT
+========================= */
+
+
+.contact-container{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:40px;
+
+
+}
+
+
+
+
+
+.contact-info,
+.contact-form{
+
+
+    width:45%;
+
+
+    padding:40px;
+
+
+    border-radius:25px;
+
+
+    background:white;
+
+
+    box-shadow:
+
+
+    0 15px 40px rgba(0,0,0,.1);
+
+
+}
+
+
+
+
+
+.contact-info{
+
+
+    text-align:left;
+
+
+}
+
+
+
+
+
+.contact-form input,
+.contact-form textarea{
+
+
+    width:100%;
+
+
+    padding:15px;
+
+
+    margin-bottom:15px;
+
+
+    border-radius:15px;
+
+
+    border:1px solid #ddd;
+
+
+    font-family:Poppins;
+
+
+}
+
+
+
+
+
+.contact-form textarea{
+
+
+    height:120px;
+
+
+    resize:none;
+
+
+}
+
+
+
+
+
+
+/* =========================
+WHATSAPP FLOAT
+========================= */
+
+
+.whatsapp{
+
+
+    position:fixed;
+
+
+    right:25px;
+
+
+    bottom:25px;
+
+
+    width:60px;
+
+
+    height:60px;
+
+
+    background:#25D366;
+
+
+    color:white;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    font-size:30px;
+
+
+    text-decoration:none;
+
+
+    z-index:999;
+
+
+}
+
+
+
+
+
+
+/* =========================
+FOOTER
+========================= */
+
+
+footer{
+
+
+    background:#050F2E;
+
+
+    padding:25px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+footer p{
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+MOBILE RESPONSIVE
+========================= */
+
+
+@media(max-width:900px){
+
+
+
+header{
+
+
+    padding:18px 20px;
+
+
+}
+
+
+
+
+
+.logo{
+
+
+    font-size:25px;
+
+
+}
+
+
+
+
+
+
+.menu-btn{
+
+
+    display:block;
+
+
+}
+
+
+
+
+
+nav{
+
+
+    display:none;
+
+
+    position:absolute;
+
+
+    top:70px;
+
+
+    left:0;
+
+
+    width:100%;
+
+
+    background:#071A4B;
+
+
+    padding:20px;
+
+
+}
+
+
+
+
+
+nav a{
+
+
+    display:block;
+
+
+    margin:20px 0;
+
+
+}
+
+
+
+
+
+.hero{
+
+
+    min-height:80vh;
+
+
+    padding:50px 20px;
+
+
+}
+
+
+
+
+
+.hero-text{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+.hero-text h4{
+
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+.hero-text h1{
+
+
+    font-size:42px;
+
+
+    line-height:1.05;
+
+
+}
+
+
+
+
+
+.hero-text p{
+
+
+    font-size:15px;
+
+
+}
+
+
+
+
+
+
+
+.choose,
+.services-page,
+.process,
+.location,
+.contact,
+.contact-page,
+.gallery,
+.price-list{
+
+
+    padding:60px 20px;
+
+
+}
+
+
+
+
+
+
+.choose h2,
+.services-page h2,
+.process h2,
+.location h2,
+.contact h2,
+.contact-page h2,
+.gallery h2,
+.price-list h2{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+
+
+.cards,
+.service-container,
+.process-container,
+.location-container,
+.contact-container{
+
+
+    flex-direction:column;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+
+
+.cards div,
+.service-box{
+
+
+    width:100%;
+
+
+    max-width:350px;
+
+
+}
+
+
+
+
+
+
+
+.price-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+
+
+
+.location-info,
+.map{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+
+.location-info{
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+
+.gallery-img{
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+
+.gallery-img img{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+.review-card{
+
+
+    width:85vw;
+
+
+}
+
+
+
+
+
+.contact-info,
+.contact-form{
+
+
+    width:100%;
+
+
+    max-width:380px;
+
+
+    padding:30px 20px;
+
+
+}
+
+
+
+
+
+
+button{
+
+
+    width:90%;
+
+
+    max-width:300px;
+
+
+}
+
+
+
+}
