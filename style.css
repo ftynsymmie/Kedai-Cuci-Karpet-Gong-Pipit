@@ -1,141 +1,123 @@
-/* =========================
-GLOBAL
-========================= */
+<!DOCTYPE html>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+<html lang="en">
 
 
-html{
-    scroll-behavior:smooth;
-}
+<head>
 
 
-body{
+<meta charset="UTF-8">
 
-    font-family:'Poppins',sans-serif;
-    color:#111;
-    background:#fff;
 
-}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+<title>KCKGP | Our Services</title>
 
-img{
 
-    width:100%;
-    display:block;
 
-}
+<link rel="stylesheet" href="style.css">
 
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-h1,h2,h3,h4{
 
-    font-weight:700;
 
-}
+</head>
 
 
 
-p{
 
-    color:#555;
-    line-height:1.7;
+<body>
 
-}
 
 
 
+<!-- HEADER -->
 
 
+<header>
 
-/* =========================
-NAVBAR
-========================= */
 
+<div class="logo">
 
-header{
+KCKGP
 
-    width:100%;
+</div>
 
-    padding:22px 8%;
 
-    background:#071A4B;
 
-    display:flex;
+<div class="menu-btn">
 
-    justify-content:space-between;
+☰
 
-    align-items:center;
+</div>
 
-    position:sticky;
 
-    top:0;
 
-    z-index:999;
 
-}
+<nav id="menu">
 
 
+<a href="index.html">
+HOME
+</a>
 
-.logo{
 
-    color:white;
+<a href="service.html">
+SERVICES
+</a>
 
-    font-size:30px;
 
-    font-weight:700;
+<a href="price.html">
+PRICE
+</a>
 
-    letter-spacing:4px;
 
-}
+<a href="location.html">
+LOCATION
+</a>
 
 
+<a href="contact.html">
+CONTACT
+</a>
 
-.logo img{
 
-    width:120px;
+</nav>
 
-}
 
 
+</header>
 
 
-nav a{
 
-    color:white;
 
-    text-decoration:none;
 
-    margin-left:25px;
 
-    font-size:14px;
 
-}
+<!-- SERVICE HERO -->
 
 
+<section class="page-hero">
 
-nav a:hover{
 
-    color:#00B4D8;
+<h1>
 
-}
+Our Services
 
+</h1>
 
 
-.menu-btn{
+<p>
 
-    display:none;
+Professional carpet cleaning solutions
+for every space.
 
-    color:white;
+</p>
 
-    font-size:30px;
 
-}
+</section>
 
 
 
@@ -144,315 +126,343 @@ nav a:hover{
 
 
 
-/* =========================
-BUTTON
-========================= */
+<!-- SERVICE LIST -->
 
 
-button{
+<section class="services-page">
 
-    background:#00B4D8;
 
-    color:white;
 
-    border:none;
+<h2>
+Servis Kami
+</h2>
 
-    padding:15px 35px;
 
-    border-radius:30px;
 
-    cursor:pointer;
 
-    font-size:16px;
+<div class="service-container">
 
-    transition:.3s;
 
-}
 
 
 
-button:hover{
+<div class="service-box">
 
-    background:#071A4B;
 
-}
+<div class="icon">
 
+🏠
 
+</div>
 
 
+<h3>
 
+Cuci Karpet Rumah
 
+</h3>
 
 
-/* =========================
-HERO BACKGROUND
-========================= */
 
+<p>
 
-.hero{
+Membersihkan karpet rumah daripada
+habuk, kotoran dan bau tidak menyenangkan
+menggunakan kaedah profesional.
 
+</p>
 
-    min-height:90vh;
 
+</div>
 
-    padding:80px 8%;
 
 
-    display:flex;
 
 
-    align-items:center;
 
 
+<div class="service-box">
 
-    background:
 
+<div class="icon">
 
-    linear-gradient(
+🛏️
 
-    rgba(7,26,75,.75),
+</div>
 
-    rgba(7,26,75,.75)
 
-    ),
+<h3>
 
+Toto dan comforter
 
-    url("image/kedai.jpeg");
+</h3>
 
 
 
-    background-size:cover;
+<p>
 
+Servis cucian untuk toto, comforter , cadardan selimut supaya lebih bersih dan wangi
 
-    background-position:center;
+</p>
 
 
-    background-repeat:no-repeat;
+</div>
 
 
-}
 
 
 
 
 
-.hero-text{
 
-    width:60%;
+<div class="service-box">
 
-    color:white;
 
-}
+<div class="icon">
 
+🏢
 
+</div>
 
 
+<h3>
 
-.hero-text h4{
+Karpet Pejabat
 
+</h3>
 
-    color:#00B4D8;
 
-    letter-spacing:3px;
 
-    margin-bottom:20px;
+<p>
 
+Membersihkan karpet pejabat,
+premis perniagaan dan ruang kerja
+supaya lebih selesa.
 
-}
+</p>
 
 
+</div>
 
 
-.hero-text h1{
 
 
-    color:white;
 
-    font-size:60px;
 
-    line-height:1.2;
 
-    margin:25px 0;
+<div class="service-box">
 
 
-}
+<div class="icon">
 
+✨
 
+</div>
 
 
+<h3>
 
-.hero-text p{
+Lain-lain perkhidmatan
 
+</h3>
 
-    color:white;
 
-    font-size:18px;
 
-    max-width:600px;
+<p>
 
-    margin-bottom:35px;
+cucian langsir, car seat bayi, stroller, karpet kereta dan lain-lain
+</p>
 
 
-}
+</div>
 
 
 
 
 
 
+</div>
 
 
+</section>
 
-/* =========================
-GENERAL SECTION
-========================= */
 
 
-.choose,
-.services-page,
-.location,
-.contact,
-.gallery,
-.price-list,
-.contact-page{
 
 
-    padding:90px 8%;
 
-    text-align:center;
 
 
-}
+<!-- PROCESS -->
 
 
+<section class="process">
 
 
 
-.choose h2,
-.services-page h2,
-.location h2,
-.contact h2,
-.gallery h2,
-.price-list h2,
-.contact-page h2{
+<h2>
 
+Proses Cucian
 
-    font-size:40px;
+</h2>
 
-    margin-bottom:40px;
 
 
-}
 
+<div class="process-container">
 
 
 
+<div>
 
+<h3>
+01
+</h3>
 
+<p>
+Pemeriksaan Karpet
+</p>
 
+</div>
 
 
-/* =========================
-CARDS
-========================= */
 
 
-.cards,
-.service-container{
 
+<div>
 
-    display:flex;
+<h3>
+02
+</h3>
 
-    justify-content:center;
+<p>
+Proses Cucian
+</p>
 
-    gap:30px;
+</div>
 
 
-}
 
 
 
 
+<div>
 
-.cards div,
-.service-box{
+<h3>
+03
+</h3>
 
+<p>
+Pengeringan
+</p>
 
-    background:white;
+</div>
 
-    padding:35px 25px;
 
-    border-radius:25px;
 
 
 
-    box-shadow:
 
-    0 10px 30px rgba(0,0,0,.1);
+<div>
 
+<h3>
+04
+</h3>
 
+<p>
+Penghantaran
+</p>
 
-    transition:.3s;
+</div>
 
 
-}
 
 
+</div>
 
 
+</section>
 
-.cards div:hover,
-.service-box:hover{
 
 
-    transform:translateY(-10px);
 
 
-}
 
 
 
 
+<!-- CTA -->
 
 
+<section class="contact">
 
 
+<h2>
 
+Karpet Anda Perlukan Cucian?
 
-/* =========================
-SERVICE
-========================= */
+</h2>
 
 
-.service-box{
+<p>
 
-    width:280px;
+Hubungi KCKGP sekarang.
 
-}
+</p>
 
 
 
+<button onclick="whatsapp()">
 
-.service-box .icon{
+WhatsApp Sekarang
 
+</button>
 
-    font-size:50px;
 
-    margin-bottom:20px;
+</section>
 
 
-}
 
 
 
 
-.service-box h3{
 
 
-    color:#071A4B;
+<!-- FOOTER -->
 
-    margin-bottom:15px;
 
+<footer>
 
-}
 
+<p>
+
+© 2026 KCKGP Carpet Cleaning
+
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+<a class="whatsapp" onclick="whatsapp()">
+
+💬
+
+</a>
+
+
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+
+
+</html>
