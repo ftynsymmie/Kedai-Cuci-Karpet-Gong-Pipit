@@ -1,0 +1,1497 @@
+/* =========================
+GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    color:#111;
+    background:#fff;
+
+}
+
+
+img{
+
+    width:100%;
+    display:block;
+
+}
+
+
+h1,h2,h3,h4{
+
+    font-weight:700;
+
+}
+
+
+p{
+
+    color:#555;
+    line-height:1.7;
+
+}
+
+
+
+/* =========================
+NAVBAR
+========================= */
+
+
+header{
+
+    width:100%;
+
+    padding:22px 8%;
+
+    background:#071A4B;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+}
+
+
+
+.logo{
+
+    color:white;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
+}
+
+
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:25px;
+
+    font-size:14px;
+
+}
+
+
+nav a:hover{
+
+    color:#00B4D8;
+
+}
+
+
+
+.menu-btn{
+
+    display:none;
+
+    color:white;
+
+    font-size:30px;
+
+}
+
+
+
+
+
+/* =========================
+BUTTON
+========================= */
+
+
+button{
+
+    background:#00B4D8;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+
+
+button:hover{
+
+    background:#071A4B;
+
+}
+
+
+
+
+
+/* =========================
+HERO
+========================= */
+
+
+.hero{
+
+
+    min-height:90vh;
+
+
+    padding:80px 8%;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+
+    background:
+
+
+    linear-gradient(
+    rgba(7,26,75,.75),
+    rgba(7,26,75,.75)
+    ),
+
+
+    url("image/kedai.jpeg");
+
+
+
+    background-size:cover;
+
+
+    background-position:center;
+
+
+}
+
+
+
+
+
+.hero-text{
+
+    width:60%;
+
+    color:white;
+
+}
+
+
+
+.hero-text h4{
+
+    color:#00B4D8;
+
+    letter-spacing:3px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+.hero-text h1{
+
+
+    color:white;
+
+    font-size:60px;
+
+    line-height:1.2;
+
+    margin:25px 0;
+
+
+}
+
+
+
+
+.hero-text p{
+
+
+    color:white;
+
+    font-size:18px;
+
+    max-width:600px;
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+SECTION
+========================= */
+
+
+.choose,
+.services-page,
+.process,
+.location,
+.contact,
+.gallery,
+.price-list{
+
+
+    padding:90px 8%;
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.choose h2,
+.services-page h2,
+.process h2,
+.location h2,
+.contact h2,
+.gallery h2,
+.price-list h2{
+
+
+    font-size:40px;
+
+    margin-bottom:40px;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+CARDS
+========================= */
+
+
+.cards,
+.service-container{
+
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+
+}
+
+
+
+
+.cards div,
+.service-box{
+
+
+    background:white;
+
+    padding:35px 25px;
+
+    border-radius:25px;
+
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.1);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.cards div:hover,
+.service-box:hover{
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+SERVICE
+========================= */
+
+
+.service-box{
+
+    width:280px;
+
+}
+
+
+
+.service-box .icon{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+/* =========================
+PROCESS CUCiAN
+========================= */
+
+
+.process{
+
+    background:#f8f9fd;
+
+}
+
+
+
+.process-container{
+
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+
+
+.process-box{
+
+
+    width:250px;
+
+    background:white;
+
+    padding:35px 25px;
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.12);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.process-box:hover{
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+
+
+.process-number{
+
+
+    width:70px;
+
+    height:70px;
+
+
+    margin:0 auto 20px;
+
+
+    background:#00B4D8;
+
+
+    color:white;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    font-size:25px;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+.process-box h3{
+
+
+    color:#071A4B;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.process-box p{
+
+    font-size:15px;
+
+}
+
+/* =========================
+PAGE HEADER
+========================= */
+
+
+.page-hero{
+
+
+    background:#071A4B;
+
+
+    color:white;
+
+
+    padding:80px 20px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.page-hero h1{
+
+    font-size:50px;
+
+}
+
+
+
+
+.page-hero p{
+
+    color:#ddd;
+
+}
+
+
+
+
+
+
+
+/* =========================
+PRICE LIST
+========================= */
+
+
+.price-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+    gap:25px;
+
+
+    max-width:900px;
+
+
+    margin:auto;
+
+
+}
+
+
+
+
+
+.price-item{
+
+
+    background:#071A4B;
+
+
+    color:white;
+
+
+    padding:35px;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.12);
+
+
+}
+
+
+
+
+
+.price-item h2{
+
+
+    font-size:40px;
+
+
+    color:#00B4D8;
+
+
+    margin:15px 0;
+
+
+}
+
+
+
+.price-item p{
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+.price-note{
+
+
+    max-width:700px;
+
+
+    margin:50px auto;
+
+
+    padding:25px;
+
+
+    background:#f5f7fb;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+LOCATION
+========================= */
+
+
+.location-container{
+
+
+    display:flex;
+
+
+    gap:40px;
+
+
+    align-items:center;
+
+
+}
+
+
+
+.location-info{
+
+    width:40%;
+
+}
+
+
+
+.map{
+
+    width:60%;
+
+}
+
+
+
+.map iframe{
+
+    border-radius:25px;
+
+}
+
+
+
+.map-button{
+
+
+    display:inline-block;
+
+
+    margin-top:20px;
+
+
+    background:#00B4D8;
+
+
+    color:white;
+
+
+    padding:15px 30px;
+
+
+    border-radius:30px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+GALLERY
+========================= */
+
+
+.gallery-img{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:30px;
+
+
+}
+
+
+
+
+.gallery-img img{
+
+
+    width:40%;
+
+
+    border-radius:25px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+MOVING GOOGLE REVIEW
+========================= */
+
+
+.testimonial{
+
+
+    padding:100px 0;
+
+
+    background:#f5f6fb;
+
+
+    text-align:center;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+.testimonial h2{
+
+
+    font-size:40px;
+
+
+    color:#071A4B;
+
+
+    margin-bottom:60px;
+
+
+}
+
+
+
+
+
+.testimonial-slider{
+
+
+    overflow:hidden;
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+
+
+.testimonial-track{
+
+
+    display:flex;
+
+
+    gap:30px;
+
+
+    width:max-content;
+
+
+    animation:moveReview 35s linear infinite;
+
+
+}
+
+
+
+
+
+
+.review-card{
+
+
+    width:320px;
+
+
+    min-height:260px;
+
+
+    background:white;
+
+
+    padding:35px;
+
+
+    border-radius:25px;
+
+
+    flex-shrink:0;
+
+
+    text-align:left;
+
+
+    box-shadow:
+
+
+    0 15px 40px rgba(0,0,0,.12);
+
+
+}
+
+
+
+
+
+.review-card:hover{
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+
+
+.review-card .stars{
+
+
+    color:#FFC107;
+
+
+    font-size:26px;
+
+
+    letter-spacing:4px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.review-card h4{
+
+
+    color:#071A4B;
+
+
+    margin-bottom:15px;
+
+
+    font-size:18px;
+
+
+}
+
+
+
+
+
+.review-card p{
+
+
+    font-size:16px;
+
+
+    min-height:60px;
+
+
+}
+
+
+
+
+
+.review-card span{
+
+
+    color:#999;
+
+
+    font-size:13px;
+
+
+}
+
+
+
+
+
+
+
+@keyframes moveReview{
+
+
+    0%{
+
+        transform:translateX(0);
+
+    }
+
+
+    100%{
+
+        transform:translateX(-50%);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+CONTACT
+========================= */
+
+
+.contact-container{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:40px;
+
+
+}
+
+
+
+
+
+.contact-info,
+.contact-form{
+
+
+    width:45%;
+
+
+    padding:40px;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+
+    0 10px 30px rgba(0,0,0,.1);
+
+
+}
+
+
+
+
+
+.contact-form input,
+.contact-form textarea{
+
+
+    width:100%;
+
+
+    padding:15px;
+
+
+    margin-bottom:15px;
+
+
+    border-radius:15px;
+
+
+    border:1px solid #ddd;
+
+
+    font-family:Poppins;
+
+
+}
+
+
+
+
+
+.contact-form textarea{
+
+
+    height:120px;
+
+
+    resize:none;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+WHATSAPP
+========================= */
+
+
+.whatsapp{
+
+
+    position:fixed;
+
+
+    right:20px;
+
+
+    bottom:20px;
+
+
+    width:60px;
+
+
+    height:60px;
+
+
+    background:#25D366;
+
+
+    color:white;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    font-size:30px;
+
+
+    text-decoration:none;
+
+
+    z-index:999;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+FOOTER
+========================= */
+
+
+footer{
+
+
+    background:#050F2E;
+
+
+    padding:25px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+footer p{
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+MOBILE RESPONSIVE
+========================= */
+
+
+@media(max-width:900px){
+
+
+
+header{
+
+
+    padding:20px;
+
+
+}
+
+
+
+
+.menu-btn{
+
+
+    display:block;
+
+
+}
+
+
+
+
+
+nav{
+
+
+    display:none;
+
+
+    position:absolute;
+
+
+    top:75px;
+
+
+    left:0;
+
+
+    width:100%;
+
+
+    background:#071A4B;
+
+
+    padding:20px;
+
+
+}
+
+
+
+
+
+nav a{
+
+
+    display:block;
+
+
+    margin:15px;
+
+
+}
+
+
+
+
+
+
+
+
+.hero{
+
+
+    padding:60px 20px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.hero-text{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+
+
+.hero-text h1{
+
+
+    font-size:38px;
+
+
+}
+
+
+
+
+
+
+
+.hero-text p{
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+
+
+
+.cards,
+.service-container,
+.process-container,
+.location-container,
+.contact-container{
+
+
+    flex-direction:column;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+
+
+
+.cards div,
+.service-box,
+.process-box,
+.contact-info,
+.contact-form{
+
+
+    width:100%;
+
+
+    max-width:350px;
+
+
+}
+
+
+
+
+
+
+
+.location-info,
+.map{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+
+
+.price-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+
+
+
+.gallery-img{
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+
+
+
+
+.gallery-img img{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+
+
+
+.testimonial h2{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+
+
+
+.review-card{
+
+
+    width:280px;
+
+
+}
+
+
+
+
+
+
+
+.page-hero h1{
+
+
+    font-size:35px;
+
+
+}
+
+
+
+}
