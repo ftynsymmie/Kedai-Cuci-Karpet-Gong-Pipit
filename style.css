@@ -1,425 +1,1340 @@
-<!DOCTYPE html>
+/* =========================
+GLOBAL
+========================= */
 
-<html lang="en">
-
-
-<head>
-
-
-<meta charset="UTF-8">
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 
-<title>KCKGP | Our Services</title>
+html{
+    scroll-behavior:smooth;
+}
 
 
+body{
 
-<link rel="stylesheet" href="style.css">
+    font-family:'Poppins',sans-serif;
+    color:#111;
+    background:#fff;
 
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-
-
-</head>
+}
 
 
+img{
+
+    width:100%;
+    display:block;
+
+}
 
 
-<body>
+h1,h2,h3,h4{
+
+    font-weight:700;
+
+}
 
 
+p{
 
+    color:#555;
+    line-height:1.7;
 
-<!-- HEADER -->
-
-
-<header>
-
-
-<div class="logo">
-
-KCKGP
-
-</div>
-
-
-
-<div class="menu-btn">
-
-☰
-
-</div>
+}
 
 
 
-
-<nav id="menu">
-
-
-<a href="index.html">
-HOME
-</a>
+/* =========================
+NAVBAR
+========================= */
 
 
-<a href="service.html">
-SERVICES
-</a>
+header{
+
+    width:100%;
+
+    padding:22px 8%;
+
+    background:#071A4B;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+}
 
 
-<a href="price.html">
-PRICE
-</a>
+
+.logo{
+
+    color:white;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
+}
 
 
-<a href="location.html">
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:25px;
+
+    font-size:14px;
+
+}
+
+
+nav a:hover{
+
+    color:#00B4D8;
+
+}
+
+
+
+.menu-btn{
+
+    display:none;
+
+    color:white;
+
+    font-size:30px;
+
+}
+
+
+
+
+
+/* =========================
+BUTTON
+========================= */
+
+
+button{
+
+    background:#00B4D8;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+
+
+button:hover{
+
+    background:#071A4B;
+
+}
+
+
+
+
+
+/* =========================
+HERO
+========================= */
+
+
+.hero{
+
+
+    min-height:90vh;
+
+
+    padding:80px 8%;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+
+    background:
+
+
+    linear-gradient(
+    rgba(7,26,75,.75),
+    rgba(7,26,75,.75)
+    ),
+
+
+    url("image/kedai.jpeg");
+
+
+
+    background-size:cover;
+
+
+    background-position:center;
+
+
+}
+
+
+
+
+
+.hero-text{
+
+    width:60%;
+
+    color:white;
+
+}
+
+
+
+.hero-text h4{
+
+    color:#00B4D8;
+
+    letter-spacing:3px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+.hero-text h1{
+
+
+    color:white;
+
+    font-size:60px;
+
+    line-height:1.2;
+
+    margin:25px 0;
+
+
+}
+
+
+
+
+.hero-text p{
+
+
+    color:white;
+
+    font-size:18px;
+
+    max-width:600px;
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+SECTION
+========================= */
+
+
+.choose,
+.services-page,
+.process,
+.location,
+.contact,
+.gallery,
+.price-list{
+
+
+    padding:90px 8%;
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.choose h2,
+.services-page h2,
+.process h2,
+.location h2,
+.contact h2,
+.gallery h2,
+.price-list h2{
+
+
+    font-size:40px;
+
+    margin-bottom:40px;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+CARDS
+========================= */
+
+
+.cards,
+.service-container{
+
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+
+}
+
+
+
+
+.cards div,
+.service-box{
+
+
+    background:white;
+
+    padding:35px 25px;
+
+    border-radius:25px;
+
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.1);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.cards div:hover,
+.service-box:hover{
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+SERVICE
+========================= */
+
+
+.service-box{
+
+    width:280px;
+
+}
+
+
+
+.service-box .icon{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+/* =========================
+PROCESS CUCiAN
+========================= */
+
+
+.process{
+
+    background:#f8f9fd;
+
+}
+
+
+
+.process-container{
+
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+
+
+.process-box{
+
+
+    width:250px;
+
+    background:white;
+
+    padding:35px 25px;
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.12);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.process-box:hover{
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+
+
+.process-number{
+
+
+    width:70px;
+
+    height:70px;
+
+
+    margin:0 auto 20px;
+
+
+    background:#00B4D8;
+
+
+    color:white;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    font-size:25px;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+.process-box h3{
+
+
+    color:#071A4B;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.process-box p{
+
+    font-size:15px;
+
+}
+
+/* =========================
+PAGE HEADER
+========================= */
+
+
+.page-hero{
+
+
+    background:#071A4B;
+
+
+    color:white;
+
+
+    padding:80px 20px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.page-hero h1{
+
+    font-size:50px;
+
+}
+
+
+
+
+.page-hero p{
+
+    color:#ddd;
+
+}
+
+
+
+
+
+
+
+/* =========================
+PRICE LIST
+========================= */
+
+
+.price-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+    gap:25px;
+
+
+    max-width:900px;
+
+
+    margin:auto;
+
+
+}
+
+
+
+
+
+.price-item{
+
+
+    background:#071A4B;
+
+
+    color:white;
+
+
+    padding:35px;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.12);
+
+
+}
+
+
+
+
+
+.price-item h2{
+
+
+    font-size:40px;
+
+
+    color:#00B4D8;
+
+
+    margin:15px 0;
+
+
+}
+
+
+
+.price-item p{
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+.price-note{
+
+
+    max-width:700px;
+
+
+    margin:50px auto;
+
+
+    padding:25px;
+
+
+    background:#f5f7fb;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
 LOCATION
-</a>
+========================= */
 
 
-<a href="contact.html">
+.location-container{
+
+
+    display:flex;
+
+
+    gap:40px;
+
+
+    align-items:center;
+
+
+}
+
+
+
+.location-info{
+
+    width:40%;
+
+}
+
+
+
+.map{
+
+    width:60%;
+
+}
+
+
+
+.map iframe{
+
+    border-radius:25px;
+
+}
+
+
+
+.map-button{
+
+
+    display:inline-block;
+
+
+    margin-top:20px;
+
+
+    background:#00B4D8;
+
+
+    color:white;
+
+
+    padding:15px 30px;
+
+
+    border-radius:30px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+GALLERY
+========================= */
+
+
+.gallery-img{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:30px;
+
+
+}
+
+
+
+
+.gallery-img img{
+
+
+    width:40%;
+
+
+    border-radius:25px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+MOVING GOOGLE REVIEW
+========================= */
+
+
+.testimonial{
+
+
+    padding:100px 0;
+
+
+    background:#f5f6fb;
+
+
+    text-align:center;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+.testimonial h2{
+
+
+    font-size:40px;
+
+
+    color:#071A4B;
+
+
+    margin-bottom:60px;
+
+
+}
+
+
+
+
+
+.testimonial-slider{
+
+
+    overflow:hidden;
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+
+
+.testimonial-track{
+
+
+    display:flex;
+
+
+    gap:30px;
+
+
+    width:max-content;
+
+
+    animation:moveReview 35s linear infinite;
+
+
+}
+
+
+
+
+
+
+.review-card{
+
+
+    width:320px;
+
+
+    min-height:260px;
+
+
+    background:white;
+
+
+    padding:35px;
+
+
+    border-radius:25px;
+
+
+    flex-shrink:0;
+
+
+    text-align:left;
+
+
+    box-shadow:
+
+
+    0 15px 40px rgba(0,0,0,.12);
+
+
+}
+
+
+
+
+
+.review-card:hover{
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+
+
+.review-card .stars{
+
+
+    color:#FFC107;
+
+
+    font-size:26px;
+
+
+    letter-spacing:4px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.review-card h4{
+
+
+    color:#071A4B;
+
+
+    margin-bottom:15px;
+
+
+    font-size:18px;
+
+
+}
+
+
+
+
+
+.review-card p{
+
+
+    font-size:16px;
+
+
+    min-height:60px;
+
+
+}
+
+
+
+
+
+.review-card span{
+
+
+    color:#999;
+
+
+    font-size:13px;
+
+
+}
+
+
+
+
+
+
+
+@keyframes moveReview{
+
+
+    0%{
+
+        transform:translateX(0);
+
+    }
+
+
+    100%{
+
+        transform:translateX(-50%);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
 CONTACT
-</a>
+========================= */
 
 
-</nav>
+.contact-container{
 
 
+    display:flex;
 
-</header>
 
+    justify-content:center;
 
 
+    gap:40px;
 
 
+}
 
 
-<!-- SERVICE HERO -->
 
 
-<section class="page-hero">
 
+.contact-info,
+.contact-form{
 
-<h1>
 
-Our Services
+    width:45%;
 
-</h1>
 
+    padding:40px;
 
-<p>
 
-Professional carpet cleaning solutions
-for every space.
+    border-radius:25px;
 
-</p>
 
+    box-shadow:
 
-</section>
 
+    0 10px 30px rgba(0,0,0,.1);
 
 
+}
 
 
 
 
 
-<!-- SERVICE LIST -->
+.contact-form input,
+.contact-form textarea{
 
 
-<section class="services-page">
+    width:100%;
 
 
+    padding:15px;
 
-<h2>
-Servis Kami
-</h2>
 
+    margin-bottom:15px;
 
 
+    border-radius:15px;
 
-<div class="service-container">
 
+    border:1px solid #ddd;
 
 
+    font-family:Poppins;
 
 
-<div class="service-box">
+}
 
 
-<div class="icon">
 
-🏠
 
-</div>
 
+.contact-form textarea{
 
-<h3>
 
-Cuci Karpet Rumah
+    height:120px;
 
-</h3>
 
+    resize:none;
 
 
-<p>
+}
 
-Membersihkan karpet rumah daripada
-habuk, kotoran dan bau tidak menyenangkan
-menggunakan kaedah profesional.
 
-</p>
 
 
-</div>
 
 
 
 
 
+/* =========================
+WHATSAPP
+========================= */
 
 
-<div class="service-box">
+.whatsapp{
 
 
-<div class="icon">
+    position:fixed;
 
-🛏️
 
-</div>
+    right:20px;
 
 
-<h3>
+    bottom:20px;
 
-Toto dan comforter
 
-</h3>
+    width:60px;
 
 
+    height:60px;
 
-<p>
 
-Servis cucian untuk toto, comforter , cadardan selimut supaya lebih bersih dan wangi
+    background:#25D366;
 
-</p>
 
+    color:white;
 
-</div>
 
+    border-radius:50%;
 
 
+    display:flex;
 
 
+    justify-content:center;
 
 
+    align-items:center;
 
-<div class="service-box">
 
+    font-size:30px;
 
-<div class="icon">
 
-🏢
+    text-decoration:none;
 
-</div>
 
+    z-index:999;
 
-<h3>
 
-Karpet Pejabat
+}
 
-</h3>
 
 
 
-<p>
 
-Membersihkan karpet pejabat,
-premis perniagaan dan ruang kerja
-supaya lebih selesa.
 
-</p>
 
 
-</div>
 
+/* =========================
+FOOTER
+========================= */
 
 
+footer{
 
 
+    background:#050F2E;
 
 
-<div class="service-box">
+    padding:25px;
 
 
-<div class="icon">
+    text-align:center;
 
-✨
 
-</div>
+}
 
 
-<h3>
 
-Lain-lain perkhidmatan
+footer p{
 
-</h3>
 
+    color:white;
 
 
-<p>
+}
 
-cucian langsir, car seat bayi, stroller, karpet kereta dan lain-lain
-</p>
 
 
-</div>
 
 
 
 
 
 
-</div>
 
 
-</section>
+/* =========================
+MOBILE RESPONSIVE
+========================= */
 
 
+@media(max-width:900px){
 
 
 
+header{
 
 
+    padding:20px;
 
-<!-- PROCESS -->
 
+}
 
-<section class="process">
 
 
 
-<h2>
+.menu-btn{
 
-Proses Cucian
 
-</h2>
+    display:block;
 
 
+}
 
 
-<div class="process-container">
 
 
 
-<div>
+nav{
 
-<h3>
-01
-</h3>
 
-<p>
-Pemeriksaan Karpet
-</p>
+    display:none;
 
-</div>
 
+    position:absolute;
 
 
+    top:75px;
 
 
-<div>
+    left:0;
 
-<h3>
-02
-</h3>
 
-<p>
-Proses Cucian
-</p>
+    width:100%;
 
-</div>
 
+    background:#071A4B;
 
 
+    padding:20px;
 
 
+}
 
-<div>
 
-<h3>
-03
-</h3>
 
-<p>
-Pengeringan
-</p>
 
-</div>
 
+nav a{
 
 
+    display:block;
 
 
+    margin:15px;
 
-<div>
 
-<h3>
-04
-</h3>
+}
 
-<p>
-Penghantaran
-</p>
 
-</div>
 
 
 
 
-</div>
 
 
-</section>
+.hero{
 
 
+    padding:60px 20px;
 
 
+    text-align:center;
 
 
+}
 
 
 
-<!-- CTA -->
 
 
-<section class="contact">
+.hero-text{
 
 
-<h2>
+    width:100%;
 
-Karpet Anda Perlukan Cucian?
 
-</h2>
+}
 
 
-<p>
 
-Hubungi KCKGP sekarang.
 
-</p>
 
 
 
-<button onclick="whatsapp()">
+.hero-text h1{
 
-WhatsApp Sekarang
 
-</button>
+    font-size:38px;
 
 
-</section>
+}
 
 
 
@@ -427,42 +1342,156 @@ WhatsApp Sekarang
 
 
 
+.hero-text p{
 
-<!-- FOOTER -->
 
+    font-size:16px;
 
-<footer>
 
+}
 
-<p>
 
-© 2026 KCKGP Carpet Cleaning
 
-</p>
 
 
-</footer>
 
 
+.cards,
+.service-container,
+.process-container,
+.location-container,
+.contact-container{
 
 
+    flex-direction:column;
 
 
+    align-items:center;
 
-<a class="whatsapp" onclick="whatsapp()">
 
-💬
+}
 
-</a>
 
 
 
 
-<script src="script.js"></script>
 
 
 
-</body>
+.cards div,
+.service-box,
+.process-box,
+.contact-info,
+.contact-form{
 
 
-</html>
+    width:100%;
+
+
+    max-width:350px;
+
+
+}
+
+
+
+
+
+
+
+.location-info,
+.map{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+
+
+.price-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+
+
+
+.gallery-img{
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+
+
+
+
+.gallery-img img{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+
+
+
+.testimonial h2{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+
+
+
+.review-card{
+
+
+    width:280px;
+
+
+}
+
+
+
+
+
+
+
+.page-hero h1{
+
+
+    font-size:35px;
+
+
+}
+
+
+
+}
